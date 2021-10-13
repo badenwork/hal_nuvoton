@@ -1,2 +1,3 @@
+name: hal_nuvoton
 build:
   cmake: .
