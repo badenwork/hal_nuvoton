@@ -28,10 +28,10 @@
 /** @cond HIDDEN_SYMBOLS */
 
 
-#define ENABLE_DEBUG    0
+#define ENABLE_DEBUG    1
 
 #if ENABLE_DEBUG
-#define SPIM_DBGMSG   printf
+#define SPIM_DBGMSG   printk
 #else
 #define SPIM_DBGMSG(...)   do { } while (0)      /* disable debug */
 #endif
@@ -897,7 +897,7 @@ void SPIM_WinbondUnlock(uint32_t u32NBit)
 
     SPIM_ReadJedecId(idBuf, sizeof (idBuf), u32NBit);
 
-    if ((idBuf[0] != MFGID_WINBOND) || (idBuf[1] != 0x40) || (idBuf[2] != 0x16))
+    if ((idBuf[0] != MFGID_WINBOND) || (idBuf[1] != 0x70) || (idBuf[2] != 0x18))
     {
         SPIM_DBGMSG("SPIM_WinbondUnlock - Not W25Q32, do nothing.\n");
         return;
