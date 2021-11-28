@@ -28,7 +28,7 @@
 /** @cond HIDDEN_SYMBOLS */
 
 
-#define ENABLE_DEBUG    1
+#define ENABLE_DEBUG    0
 
 #if ENABLE_DEBUG
 #define SPIM_DBGMSG   printk
