@@ -70,7 +70,14 @@ void SystemCoreClockUpdate (void)            /* Get Core Clock Frequency      */
 static __INLINE void HXTInit(void)
 {
     PF->MODE &= ~(GPIO_MODE_MODE2_Msk | GPIO_MODE_MODE3_Msk);
+}
 
+static __INLINE void LXTInit(void)
+{
+    /* Set X32_OUT(PF.4) and X32_IN(PF.5) to input mode */
+    PF->MODE &= ~(GPIO_MODE_MODE4_Msk | GPIO_MODE_MODE5_Msk);
+    CLK_EnableXtalRC(CLK_PWRCTL_LXTEN_Msk);
+    CLK_WaitClockReady(CLK_STATUS_LXTSTB_Msk);
 }
 
 /**
@@ -105,6 +112,6 @@ void SystemInit (void)
                        RTC_GPIOCTL1_CTLSEL6_Msk | RTC_GPIOCTL1_CTLSEL7_Msk);
     CLK->APBCLK0 &= ~CLK_APBCLK0_RTCCKEN_Msk;
     HXTInit();
-
+    // LXTInit();
 }
 /*** (C) COPYRIGHT 2016 Nuvoton Technology Corp. ***/
