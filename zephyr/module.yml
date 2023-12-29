@@ -1,3 +1,5 @@
 name: hal_nuvoton
 build:
   cmake: .
+  settings:
+    dts_root: .
