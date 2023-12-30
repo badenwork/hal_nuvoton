@@ -21,7 +21,7 @@
     Memory Mapped Structure for SYS Controller
   @{
 */
-
+#if 0
 typedef struct
 {
 
@@ -1245,7 +1245,7 @@ typedef struct
 
 
 } SYS_T;
-
+#endif
 /**
     @addtogroup SYS_CONST SYS Bit Field Definition
     Constant Definitions for SYS Controller
