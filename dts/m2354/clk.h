@@ -722,7 +722,7 @@ extern "C"
 #define CLK_TIMEOUT                 (SystemCoreClock) /*!< CLK time-out counter (1 second time-out) */
 
 /**@}*/ /* end of group CLK_EXPORTED_CONSTANTS */
-
+#if 0
 /** @addtogroup CLK_EXPORTED_FUNCTIONS CLK Exported Functions
   @{
 */
@@ -1069,6 +1069,7 @@ uint32_t CLK_GetModuleClockDivider(uint32_t u32ModuleIdx);
 
 
 /**@}*/ /* end of group CLK_EXPORTED_FUNCTIONS */
+#endif
 
 /**@}*/ /* end of group CLK_Driver */
 

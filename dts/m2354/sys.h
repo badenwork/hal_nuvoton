@@ -3139,7 +3139,7 @@ Example: If user want to set PA.1 as UART0_TXD and PA.0 as UART0_RXD in initial 
 /** @addtogroup SYS_EXPORTED_FUNCTIONS SYS Exported Functions
   @{
 */
-
+#if 0
 /*---------------------------------------------------------------------------------------------------------*/
 /*  Multi-Function macro definitions.                                                                      */
 /*---------------------------------------------------------------------------------------------------------*/
@@ -4336,6 +4336,7 @@ void SYS_SetVRef(uint32_t u32VRefCTL);
 /**@}*/ /* end of group SYS_EXPORTED_FUNCTIONS */
 
 /**@}*/ /* end of group SYS_Driver */
+#endif
 
 /**@}*/ /* end of group Standard_Driver */
 
