@@ -2364,6 +2364,7 @@ typedef struct
 
 
 /**@}*/ /* SYS_CONST */
+#if 0
 typedef struct
 {
 
@@ -2503,6 +2504,7 @@ typedef struct
     __I   uint32_t NMISTS;         /* Offset: 0x04  NMI source interrupt Status Register                               */
 
 } SYS_INT_T;
+#endif
 /**
     @addtogroup INT_CONST INT Bit Field Definition
     Constant Definitions for INT Controller
