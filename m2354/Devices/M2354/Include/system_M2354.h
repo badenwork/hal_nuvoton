@@ -16,7 +16,7 @@ extern "C" {
 /* Macro Definition                                                                                        */
 /*---------------------------------------------------------------------------------------------------------*/
 #ifndef DEBUG_PORT
-# define DEBUG_PORT      UART0       /*!< Select Debug Port which is used for retarget.c to output debug message to UART */
+# define DEBUG_PORT      UART3       /*!< Select Debug Port which is used for retarget.c to output debug message to UART */
 #endif
 
 
