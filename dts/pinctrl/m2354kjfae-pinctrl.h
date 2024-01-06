@@ -10,7 +10,7 @@
 #define NVT_PINMUX(port, pinIndex, mfp) \
     ((((port) - 'A') << 28)| \
     ((pinIndex) << 24) | \
-    ((mfp) >> ((pinIndex %4)*8)))
+    ((mfp) >> ((pinIndex % 8) * 4)))
 
 // Parced by parcer.py script
 
